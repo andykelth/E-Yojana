@@ -7,6 +7,9 @@ import android.provider.ContactsContract;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.ProgressBar;
+import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -14,9 +17,11 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
+import com.google.android.material.textfield.TextInputEditText;
+
 public class MainActivity extends AppCompatActivity {
 
-    ImageView imageView;
+    ImageView imageView1, chatimg;
     Button btn001;
 
     @SuppressLint("MissingInflatedId")
@@ -31,7 +36,8 @@ public class MainActivity extends AppCompatActivity {
             return insets;
         });
 
-        imageView = findViewById(R.id.i_image);
+        imageView1 = findViewById(R.id.i_image);
+        chatimg = findViewById(R.id.chatbot);
         btn001 = findViewById(R.id.goto_profile);
 
         btn001.setOnClickListener(new View.OnClickListener() {
@@ -41,7 +47,7 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-        imageView.setOnClickListener(new View.OnClickListener() {
+        imageView1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(getApplicationContext(),User.class);
@@ -49,5 +55,16 @@ public class MainActivity extends AppCompatActivity {
                 finish();
             }
         });
+        chatimg.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(),ChatBot.class);
+                startActivity(intent);
+                finish();
+            }
+        });
+
+
     }
 }
+
