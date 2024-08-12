@@ -51,41 +51,59 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
-        android:id="@+id/goto_profile"
-        android:layout_width="301dp"
-        android:layout_height="56dp"
-        android:text="profile"
+    <androidx.cardview.widget.CardView
+        android:layout_width="400dp"
+        android:layout_height="52dp"
+        app:cardBackgroundColor="@color/gray"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.436"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.592"
-        tools:ignore="MissingConstraints" />
+        app:layout_constraintVertical_bias="0.976"
+        tools:ignore="MissingConstraints">
 
-    <TextView
-        android:id="@+id/textView12"
-        android:layout_width="315dp"
-        android:layout_height="127dp"
-        android:text="jyare menu bar aavse tyare aa button tya vayu jase"
-        android:textSize="25dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="MissingConstraints" />
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="8.5dp"
+            android:layout_marginBottom="8.5dp"
+            android:layout_marginLeft="52dp"
+            android:src="@drawable/home_black">
 
-    <ImageView
-        android:id="@+id/chatbot"
-        android:layout_width="76dp"
-        android:layout_height="74dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.952"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.939"
-        app:srcCompat="@drawable/chatbot" />
+        </ImageView>
+        <ImageView
+            android:id="@+id/categoryfromhome"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="8.5dp"
+            android:layout_marginBottom="8.5dp"
+            android:layout_marginLeft="139dp"
+            android:src="@drawable/category_outline">
+
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/chatbotfromhome"
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginBottom="8.5dp"
+            android:layout_marginLeft="226dp"
+            android:src="@drawable/chatbot_outline">
+
+        </ImageView>
+        <ImageView
+            android:id="@+id/userfromhome"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="8.5dp"
+            android:layout_marginBottom="8.5dp"
+            android:layout_marginLeft="313dp"
+            android:src="@drawable/user_outline">
+
+        </ImageView>
+    </androidx.cardview.widget.CardView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -47,10 +47,11 @@
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cardView"
-        android:layout_width="378dp"
-        android:layout_height="466dp"
+        android:layout_width="374dp"
+        android:layout_height="465dp"
+
         android:layout_margin="30dp"
-        app:cardBackgroundColor="@color/lite_blue"
+        app:cardBackgroundColor="@color/gray"
         app:cardCornerRadius="30dp"
         app:cardElevation="4dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -263,5 +264,6 @@
         </androidx.cardview.widget.CardView>
 
     </androidx.cardview.widget.CardView>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -21,8 +21,7 @@ import com.google.android.material.textfield.TextInputEditText;
 
 public class MainActivity extends AppCompatActivity {
 
-    ImageView imageView1, chatimg;
-    Button btn001;
+    ImageView imageView1, navcateformhome, navchatfromhome, navuserfromhome;
 
     @SuppressLint("MissingInflatedId")
     @Override
@@ -37,16 +36,11 @@ public class MainActivity extends AppCompatActivity {
         });
 
         imageView1 = findViewById(R.id.i_image);
-        chatimg = findViewById(R.id.chatbot);
-        btn001 = findViewById(R.id.goto_profile);
+        navcateformhome = findViewById(R.id.categoryfromhome);
+        navchatfromhome = findViewById(R.id.chatbotfromhome);
+        navuserfromhome = findViewById(R.id.userfromhome);
 
-        btn001.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this,Profile.class);
-                startActivity(intent);
-            }
-        });
+
         imageView1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -55,7 +49,15 @@ public class MainActivity extends AppCompatActivity {
                 finish();
             }
         });
-        chatimg.setOnClickListener(new View.OnClickListener() {
+        navcateformhome.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(),category.class);
+                startActivity(intent);
+                finish();
+            }
+        });
+        navchatfromhome.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(getApplicationContext(),ChatBot.class);
@@ -63,6 +65,15 @@ public class MainActivity extends AppCompatActivity {
                 finish();
             }
         });
+        navuserfromhome.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(),Profile.class);
+                startActivity(intent);
+                finish();
+            }
+        });
+
 
 
     }

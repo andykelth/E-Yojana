@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -17,7 +18,7 @@ import androidx.core.view.WindowInsetsCompat;
 import com.google.android.material.textfield.TextInputEditText;
 
 public class ChatBot extends AppCompatActivity {
-    Button btn001;
+    ImageView navhomefromchat, navcatfromchat, navuserfromchat;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -32,7 +33,10 @@ public class ChatBot extends AppCompatActivity {
         Button sendQueryButton = findViewById(R.id.sendPromptButton);
         TextView responseTextView = findViewById(R.id.modelResponseTextView);
         ProgressBar progressBar = findViewById(R.id.sendPromptProgressBar);
-        btn001 = findViewById(R.id.backhome);
+        navhomefromchat = findViewById(R.id.homefromchat);
+        navcatfromchat = findViewById(R.id.catagoryfromchat);
+        navuserfromchat = findViewById(R.id.userfromchat);
+
 
 
         sendQueryButton.setOnClickListener(v -> {
@@ -58,10 +62,24 @@ public class ChatBot extends AppCompatActivity {
                 }
             });
         });
-        btn001.setOnClickListener(new View.OnClickListener() {
+        navhomefromchat.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(ChatBot.this,MainActivity.class);
+                startActivity(intent);
+            }
+        });
+        navcatfromchat.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(ChatBot.this,category.class);
+                startActivity(intent);
+            }
+        });
+        navuserfromchat.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(ChatBot.this,Profile.class);
                 startActivity(intent);
             }
         });

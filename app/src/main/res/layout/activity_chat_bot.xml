@@ -12,14 +12,15 @@
         android:id="@+id/scrollView2"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:layout_editor_absoluteX="-2dp"
-        tools:layout_editor_absoluteY="-16dp">
+        app:layout_constraintBottom_toTopOf="@+id/cardView2"
+        tools:layout_editor_absoluteX="-2dp">
 
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:paddingBottom="72dp">
 
 
             <TextView
@@ -75,16 +76,61 @@
         </LinearLayout>
     </ScrollView>
 
-    <Button
-        android:id="@+id/backhome"
-        android:layout_width="396dp"
-        android:layout_height="38dp"
-        android:text="Home"
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView2"
+        android:layout_width="400dp"
+        android:layout_height="52dp"
+        app:cardBackgroundColor="@color/gray"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.466"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/scrollView2"
-        app:layout_constraintVertical_bias="0.998"
-        tools:ignore="MissingConstraints" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.976"
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+            android:id="@+id/homefromchat"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="52dp"
+            android:layout_marginTop="8.5dp"
+            android:layout_marginBottom="8.5dp"
+            android:src="@drawable/home_outline">
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/catagoryfromchat"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="139dp"
+            android:layout_marginTop="8.5dp"
+            android:layout_marginBottom="8.5dp"
+            android:src="@drawable/category_outline">
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/chatbotfromchat"
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:layout_marginLeft="226dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginBottom="8.5dp"
+            android:src="@drawable/chatbot_black"
+            tools:ignore="ContentDescription">
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/userfromchat"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="313dp"
+            android:layout_marginTop="8.5dp"
+            android:layout_marginBottom="8.5dp"
+            android:src="@drawable/user_outline"
+            tools:ignore="ContentDescription">
+
+        </ImageView>
+    </androidx.cardview.widget.CardView>
 </androidx.constraintlayout.widget.ConstraintLayout>
