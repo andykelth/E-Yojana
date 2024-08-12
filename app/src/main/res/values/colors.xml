@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="black">#FF000000</color>
+    <color name="charcol_black">#353935</color>
     <color name="gray">#E3E3E3</color>
     <color name="white">#FFFFFFFF</color>
     <color name="lite_blue">#b3e5ec</color>
