@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">My Application</string>
+    <string name="heading_one">All Details Of Goverment Yojana</string>
+    <string name="heading_two">All categories people can access and use</string>
+    <string name="heading_three">Audio facility</string>
+    <string name="text_one">We will provide all the details of the goverment scheme</string>
+    <string name="text_two">You will find all the scheme for small children, youths and senior citizens</string>
+    <string name="text_three">Audio will be provide which can be help to understood scheme</string>
 </resources>
