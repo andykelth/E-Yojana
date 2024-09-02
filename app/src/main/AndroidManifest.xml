@@ -3,6 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
     <application
         android:allowBackup="true"
@@ -15,10 +17,13 @@
         android:theme="@style/Theme.Material3.Light.NoActionBar"
         tools:targetApi="31">
         <activity
-            android:name=".intro_page1"
+            android:name=".CategoryActivity"
             android:exported="false" />
         <activity
-            android:name=".category"
+            android:name=".admin_login"
+            android:exported="false" />
+        <activity
+            android:name=".intro_page1"
             android:exported="false" />
         <activity
             android:name=".ChatBot"
@@ -49,6 +54,21 @@
             android:exported="false" />
         <activity
             android:name=".Splash"
+            android:exported="false" />
+
+        <activity
+            android:name=".AdminActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AddItemActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CategoryItemsActivity"
+            android:exported="false" />
+
+
+        <activity
+            android:name=".DetailActivity"
             android:exported="false" />
 
         <meta-data

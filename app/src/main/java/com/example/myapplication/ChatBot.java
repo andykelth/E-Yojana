@@ -72,7 +72,7 @@ public class ChatBot extends AppCompatActivity {
         navcatfromchat.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(ChatBot.this,category.class);
+                Intent intent = new Intent(ChatBot.this,CategoryActivity.class);
                 startActivity(intent);
             }
         });

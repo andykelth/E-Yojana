@@ -28,7 +28,7 @@ public class Login extends AppCompatActivity {
 
     TextView forgot;
     EditText mail,pass;
-    Button login,create;
+    Button login,create,go_admin;
     FirebaseAuth mAuth;
 
     @Override
@@ -76,6 +76,16 @@ public class Login extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(getApplicationContext(),Register.class);
+                startActivity(intent);
+                finish();
+            }
+        });
+        go_admin = findViewById(R.id.btn_go_admin);
+
+        go_admin.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(),admin_login.class);
                 startActivity(intent);
                 finish();
             }

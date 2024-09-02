@@ -57,8 +57,8 @@
 
     <Button
         android:id="@+id/btn_login"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="233dp"
+        android:layout_height="56dp"
         android:layout_marginTop="98dp"
         android:text="Sign In"
         android:textSize="24dp"
@@ -122,5 +122,19 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:srcCompat="@drawable/twitter" />
+
+    <Button
+        android:id="@+id/btn_go_admin"
+        android:layout_width="233dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/gray"
+        android:text="ADMIN LOGIN"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_create" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
