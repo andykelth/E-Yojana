@@ -48,7 +48,6 @@ public class CategoryActivity extends AppCompatActivity implements View.OnClickL
         // Initialize Navigation ImageViews
         navHomeFromCat = findViewById(R.id.homefromcategory);
         navChatFromCat = findViewById(R.id.chatbotfromcategory);
-        navUserFromCat = findViewById(R.id.userfromcategory);
 
         // Set onClick listeners for CardViews
         category1Card.setOnClickListener(this);
@@ -63,10 +62,6 @@ public class CategoryActivity extends AppCompatActivity implements View.OnClickL
         });
         navChatFromCat.setOnClickListener(view -> {
             Intent intent = new Intent(CategoryActivity.this, ChatBot.class);
-            startActivity(intent);
-        });
-        navUserFromCat.setOnClickListener(view -> {
-            Intent intent = new Intent(CategoryActivity.this, Profile.class);
             startActivity(intent);
         });
     }

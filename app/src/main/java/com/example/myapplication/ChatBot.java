@@ -35,7 +35,6 @@ public class ChatBot extends AppCompatActivity {
         ProgressBar progressBar = findViewById(R.id.sendPromptProgressBar);
         navhomefromchat = findViewById(R.id.homefromchat);
         navcatfromchat = findViewById(R.id.catagoryfromchat);
-        navuserfromchat = findViewById(R.id.userfromchat);
 
 
 
@@ -76,14 +75,6 @@ public class ChatBot extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-        navuserfromchat.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(ChatBot.this,Profile.class);
-                startActivity(intent);
-            }
-        });
-
     }
 
 }

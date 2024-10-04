@@ -5,6 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/admin_back"
     tools:context=".admin_login">
 
     <!-- Password Field -->
@@ -13,12 +14,13 @@
 
     <TextView
         android:id="@+id/adminTitle"
-        android:layout_width="182dp"
-        android:layout_height="48dp"
-        android:layout_marginTop="160dp"
-        android:text="Admin Login"
-        android:textColor="@color/black"
-        android:textSize="30sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:gravity="center"
+        android:text="Ａｄｍｉｎ         Ｌｏｇｉｎ"
+        android:textColor="@color/charcol_black"
+        android:textSize="50dp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
@@ -27,32 +29,49 @@
 
     <EditText
         android:id="@+id/passwordField"
-        android:layout_width="293dp"
-        android:layout_height="49dp"
-        android:layout_marginTop="156dp"
-
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/box_background"
+        android:drawableLeft="@drawable/baseline_password_24"
+        android:drawablePadding="10dp"
         android:hint="Enter Password"
         android:inputType="textPassword"
-        android:padding="12dp"
+        android:paddingLeft="20dp"
         android:textColor="@color/black"
+        android:textSize="24dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/adminTitle"
+        app:layout_constraintTop_toBottomOf="@+id/textView10"
         app:layout_constraintWidth_default="wrap" />
 
     <Button
         android:id="@+id/loginButton"
-        android:layout_width="227dp"
-        android:layout_height="59dp"
-        android:layout_marginTop="52dp"
-
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
         android:backgroundTint="@color/gray"
-        android:padding="12dp"
         android:text="Login"
         android:textColor="@color/black"
-        android:textSize="20dp"
+        android:textSize="28dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/passwordField" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:text="Please enter your administrator password to access the admin panel"
+        android:textSize="20dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:gravity="center"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/adminTitle" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

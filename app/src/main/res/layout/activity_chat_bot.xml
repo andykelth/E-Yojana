@@ -28,9 +28,10 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="32dp"
-                android:text="E-GPT"
+                android:text="𝐄  -  𝐆 𝐏 𝐓"
                 android:textAlignment="center"
                 android:textSize="34sp"
+                android:textColor="@color/charcol_black"
                 android:textStyle="bold" />
 
             <com.google.android.material.textfield.TextInputLayout
@@ -44,7 +45,7 @@
                     android:id="@+id/queryEditText"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="TRY..." />
+                    android:hint="Message E-GTP..." />
             </com.google.android.material.textfield.TextInputLayout>
 
             <Button
@@ -53,7 +54,8 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginTop="20dp"
-                android:text="Send query" />
+                android:textSize="18dp"
+                android:text="Send Query" />
 
             <ProgressBar
                 android:id="@+id/sendPromptProgressBar"
@@ -78,8 +80,8 @@
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cardView2"
-        android:layout_width="400dp"
-        android:layout_height="52dp"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
         app:cardBackgroundColor="@color/gray"
         app:cardCornerRadius="30dp"
         app:cardElevation="10dp"
@@ -94,9 +96,9 @@
             android:id="@+id/homefromchat"
             android:layout_width="35dp"
             android:layout_height="35dp"
-            android:layout_marginLeft="52dp"
-            android:layout_marginTop="8.5dp"
-            android:layout_marginBottom="8.5dp"
+           android:layout_gravity="center"
+            android:layout_marginTop="9dp"
+            android:layout_marginBottom="9dp"
             android:src="@drawable/home_outline">
         </ImageView>
 
@@ -104,9 +106,9 @@
             android:id="@+id/catagoryfromchat"
             android:layout_width="35dp"
             android:layout_height="35dp"
-            android:layout_marginLeft="139dp"
-            android:layout_marginTop="8.5dp"
-            android:layout_marginBottom="8.5dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="9dp"
+            android:layout_marginBottom="9dp"
             android:src="@drawable/category_outline">
         </ImageView>
 
@@ -114,23 +116,12 @@
             android:id="@+id/chatbotfromchat"
             android:layout_width="38dp"
             android:layout_height="38dp"
-            android:layout_marginLeft="226dp"
-            android:layout_marginTop="7dp"
-            android:layout_marginBottom="8.5dp"
+            android:layout_marginLeft="270dp"
+            android:layout_marginTop="9dp"
+            android:layout_marginBottom="9dp"
             android:src="@drawable/chatbot_black"
             tools:ignore="ContentDescription">
         </ImageView>
 
-        <ImageView
-            android:id="@+id/userfromchat"
-            android:layout_width="35dp"
-            android:layout_height="35dp"
-            android:layout_marginLeft="313dp"
-            android:layout_marginTop="8.5dp"
-            android:layout_marginBottom="8.5dp"
-            android:src="@drawable/user_outline"
-            tools:ignore="ContentDescription">
-
-        </ImageView>
     </androidx.cardview.widget.CardView>
 </androidx.constraintlayout.widget.ConstraintLayout>

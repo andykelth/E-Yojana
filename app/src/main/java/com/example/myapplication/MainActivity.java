@@ -95,7 +95,6 @@ public class MainActivity extends AppCompatActivity {
         imageView1 = findViewById(R.id.i_image);
         navcateformhome = findViewById(R.id.categoryfromhome);
         navchatfromhome = findViewById(R.id.chatbotfromhome);
-        navuserfromhome = findViewById(R.id.userfromhome);
 
 
         imageView1.setOnClickListener(new View.OnClickListener() {
@@ -122,17 +121,6 @@ public class MainActivity extends AppCompatActivity {
                 finish();
             }
         });
-        navuserfromhome.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(),Profile.class);
-                startActivity(intent);
-                finish();
-            }
-        });
-
-
-
     }
 }
 

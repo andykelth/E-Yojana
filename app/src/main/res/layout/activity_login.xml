@@ -5,6 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/login_back"
     tools:context=".Login">
 
     <TextView
@@ -12,8 +13,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="64dp"
-        android:text="Login Page"
-        android:textSize="50dp"
+        android:text="𝐋 𝐨 𝐠 𝐢 𝐧"
+        android:textColor="#3F51B5"
+        android:textSize="70dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
@@ -28,7 +30,7 @@
         android:drawableLeft="@drawable/baseline_email_24"
         android:drawablePadding="10dp"
         android:ems="10"
-        android:hint="Email address"
+        android:hint="Email Address"
         android:inputType="text"
         android:paddingLeft="12dp"
         android:textSize="24dp"
@@ -57,81 +59,52 @@
 
     <Button
         android:id="@+id/btn_login"
-        android:layout_width="233dp"
-        android:layout_height="56dp"
-        android:layout_marginTop="98dp"
-        android:text="Sign In"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:text="SIGN IN"
         android:textSize="24dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/l_pass" />
+        app:layout_constraintTop_toBottomOf="@+id/text_forgot" />
 
     <TextView
         android:id="@+id/text_forgot"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="16dp"
         android:drawableLeft="@drawable/baseline_arrow_right_24"
         android:text="Forgot Password?"
+        android:textColor="#03A9F4"
         android:textSize="20dp"
         app:layout_constraintEnd_toEndOf="@+id/l_pass"
         app:layout_constraintTop_toBottomOf="@+id/l_pass" />
 
     <Button
         android:id="@+id/btn_create"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_width="210dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="64dp"
         android:drawableLeft="@drawable/baseline_person_add_alt_1_24"
-        android:drawablePadding="10dp"
-        android:padding="12dp"
-        android:paddingLeft="12dp"
-        android:text="Create new account"
+        android:paddingLeft="16dp"
+        android:text="New Account"
         android:textSize="20dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btn_login" />
 
-    <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="64dp"
-        android:layout_height="64dp"
-        android:layout_marginBottom="32dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/imageView4"
-        app:layout_constraintStart_toEndOf="@+id/imageView2"
-        app:srcCompat="@drawable/facebook" />
-
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="64dp"
-        android:layout_height="64dp"
-        android:layout_marginStart="64dp"
-        android:layout_marginBottom="32dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/google" />
-
-    <ImageView
-        android:id="@+id/imageView4"
-        android:layout_width="64dp"
-        android:layout_height="64dp"
-        android:layout_marginEnd="64dp"
-        android:layout_marginBottom="32dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:srcCompat="@drawable/twitter" />
-
     <Button
         android:id="@+id/btn_go_admin"
-        android:layout_width="233dp"
-        android:layout_height="49dp"
+        android:layout_width="210dp"
+        android:layout_height="50dp"
         android:layout_marginTop="16dp"
+        android:drawableLeft="@drawable/baseline_login_24"
         android:backgroundTint="@color/gray"
         android:text="ADMIN LOGIN"
         android:textColor="@color/black"
         android:textSize="20dp"
+        android:paddingLeft="10dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"

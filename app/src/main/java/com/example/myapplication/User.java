@@ -17,7 +17,7 @@ import com.google.firebase.auth.FirebaseUser;
 
 public class User extends AppCompatActivity {
 
-    TextView textView;
+    TextView textView,textView9;
     FirebaseAuth auth;
     Button signout;
     FirebaseUser user;
@@ -34,6 +34,16 @@ public class User extends AppCompatActivity {
         });
 
         textView = findViewById(R.id.text_user);
+        textView9 = findViewById(R.id.textView9);
+
+        textView9.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+                startActivity(intent);
+                finish();
+            }
+        });
 
         auth = FirebaseAuth.getInstance();
         user = auth.getCurrentUser();
